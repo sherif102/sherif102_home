@@ -1,0 +1,1 @@
+const nav_menu = document.querySelector('ul');

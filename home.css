@@ -56,6 +56,10 @@ header ul{display: none;}
     width: 100%;
     height: auto;
     margin-top: -4.1em;
+}.iimage { 
+    content: url('stf/img/intro_image_portrait.jpg');
+    width: 100%;
+    height: 100%;
 }
 .project_name {
     margin: 0; padding: 0;
@@ -93,18 +97,21 @@ header ul{display: none;}
     font-size: 2.5em;
 }
 .feature {
-    width: 100%;
+    width: fit-content;
     height: auto;
     margin: 3em 0; padding: 0;
-    display: flex;
+    display: block;
 }.feature:hover {background-color: var(--grey); cursor: grab;}
 .feature img {
-    width: 50%;
+    width: 75%;
     height: auto;
-    margin: 0; padding: 0;
+    margin: 0 0 1em 0; padding: 0;
+    border-radius: 1em;
 }
 .feature .desc {
+    width: 75%;
     margin: auto;
+    margin-bottom: 1em;
     padding: 0 0.5em;
 }.feature p, .feature h3 {
     margin: 0;
@@ -148,6 +155,11 @@ header ul{display: none;}
     padding: 0.3em; border-radius: 0.35em;
     font-size: 0.8em;
 }
+video{
+    width: 65%;
+    height: auto;
+    border-radius: 1em;
+}
 
 
 @media (min-width: 480px){
@@ -156,6 +168,7 @@ header ul{display: none;}
         background-color: var(--l_cream);
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 0.85em;
+        width: 100%;
     }
 }
 
@@ -165,6 +178,7 @@ header ul{display: none;}
         background-color: var(--l_cream);
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 0.95em;
+        width: 100%;
     }
 }
 
@@ -174,6 +188,11 @@ header ul{display: none;}
         background-color: var(--l_cream);
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.1em;
+    }
+    .iimage { 
+        content: url('stf/img/intro_image.jpg');
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -329,6 +348,7 @@ Tablets & iPads
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.2em;
         max-width: 1600px;
+        width: 100%;
     }
 
     #intro .menu {display: none;}
@@ -352,15 +372,18 @@ Tablets & iPads
     }
     #intro .name_logo {margin-top: 1em; height: 1.5em;}
     #intro ul {
-        float: right; height: 2em; align-items: center;
+        float: right; height: 2em;
+        align-items: center;
         margin: 1em;
+        display: block;
     }
     /* Menu toggle switch */
-    header ul{display: flex;}
+    header ul{display: inline; float: right;}
     #intro header li{
         list-style-type: none;
         margin-right: 1.5em;
         padding: 0.3em;
+        display: inline;
     }
     #intro img {
         clear: both;
@@ -468,6 +491,7 @@ Tablets & iPads
         background-color: var(--l_cream);
         font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 1.3em;
-        max-width: 1920px;
+        /* max-width: 1920px; */
+        width: 100%;
     }
 }
